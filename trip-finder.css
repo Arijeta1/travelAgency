@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #f3f7f6;
+    color: #19332f;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+#trip-preferences {
+    padding: 1.25rem;
+    background-color: white;
+    border: 1px solid #cedbd7;
+    border-radius: 0.75rem;
+}
+
+#trip-preferences fieldset {
+    min-width: 0;
+    margin: 0 0 1rem;
+    padding: 0.75rem;
+    border: 1px solid #cedbd7;
+    border-radius: 0.5rem;
+}
+
+#trip-preferences legend {
+    font-weight: bold;
+}
+
+#trip-preferences label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#trip-preferences select,
+#trip-preferences input[type="number"],
+#show-recommendations {
+    padding: 0.6rem 0.8rem;
+    font: inherit;
+    border-radius: 0.4rem;
+}
+
+#trip-preferences select,
+#trip-preferences input[type="number"] {
+    border: 1px solid #728781;
+}
+
+#show-recommendations {
+    background-color: #126b5b;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+#show-recommendations:hover {
+    background-color: #0d5044;
+}
+
+#trip-preferences :focus-visible {
+    outline: 2px solid #126b5b;
+    outline-offset: 3px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tell us about your ideal trip and discover destinations that match your preferences.">
+    <title>Plan My Trip | TravelAgency</title>
+     <link rel="stylesheet" href="trip-finder.css">
+</head>
+<body>
+<nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="trip-finder.html" aria-current="page">Plan My Trip</a>
+            
+        </nav>
+    </header>
+
+<main>
+    <h1>Plan My Trip</h1>
+    <p>Tell us what kind of trip you want, and we'll help you find a destination.</p>
+    <form id="trip-preferences">
+       <fieldset>
+        <legend>What would you like to do?</legend>
+        <label><input type="checkbox" name="interests" value="history">
+            Explore history
+        </label>
+        <label>
+            <input type="checkbox" name="interests" value="nature">
+            Enjoy nature
+        </label>
+<label>
+            <input type="checkbox" name="interests" value="beach">
+            Relax at the beach
+        </label>
+        <label>
+            <input type="checkbox" name="interests" value="food">
+            Try local food
+        </label>
+       </fieldset>
+       <legend>What kind of weather do you prefer?</legend>
+
+        <label>
+            <input type="radio" name="weather" value="warm">
+            Warm
+        </label>
+
+        <label>
+            <input type="radio" name="weather" value="mild">
+            Mild
+        </label>
+
+        <label>
+            <input type="radio" name="weather" value="cool">
+            Cool
+        </label>
+
+        <label>
+            <input type="radio" name="weather" value="any" checked>
+            No preference
+        </label>
+    </fieldset>
+
+    <p>
+        <label for="travel-month">When would you like to travel?</label>
+        <select id="travel-month" name="month">
+            <option value="flexible">I'm flexible</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+    </p>
+
+    <p>
+        <label for="traveler-count">How many people are traveling?</label>
+        <input id="traveler-count" name="travelers" type="number" min="1" value="1" required>
+    </p>
+
+    <button type="button" id="show-recommendations">
+        Show My Recommendations
+    </button>
+    </form>
+</main>
+</body>
+</html>
+
